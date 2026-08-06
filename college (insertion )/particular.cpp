@@ -18,12 +18,14 @@ int main(){
     int a ; 
     cout<<"Enter the place where uh want to enter the element : ";
     cin>>a ;
+    insert(arr, n, target, a);
     print(arr , n );
 }
 void insert(int arr[] , int n , int target , int a){
-    for(int i = n ; i>= a ; i++){
-        
-    }
+    for(int i = n-1; i> a ; i--){
+        arr[i]=arr[i-1]; 
+}
+arr[a]= target;
 }
 void print (int arr[] , int n){
     cout<<"Array is:";
