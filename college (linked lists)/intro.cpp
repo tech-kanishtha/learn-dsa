@@ -26,7 +26,7 @@ int main(){
         // head node's address points to the second node's address
         cout << temp->data << " -> ";
         temp = temp->next;
-
+        // temp = second ; 
     }
 
     // cleans the allocated memory 
