@@ -1,0 +1,6 @@
+The vector increases its size by 2 when its capacity gets fulled
+for example -> when we create a vector and add only one element to it , if we try to add another element : in memory its size is increased by 2 which means it is now capable of 2 elements . The next time we add an element , its size becomes 4 in memory , then 8 and then 26 and so on .
+SIZE - no. of elements 
+CAPACITY - availability
+([0|1|2| ])
+therefore in the above example : size is 3 and capacity is 4
