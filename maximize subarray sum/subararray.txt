@@ -1,0 +1,5 @@
+subarray - the continous subset of an array 
+arr - {1 , 2 , 3 , 4 , 5}
+subarrays - {1},{2},{3},{4},{5} , {1 , 2},{2, 3},{3 , 4},{4 , 5} , {1 , 2 , 3},{2 , 3 , 4},{3 , 4 , 5} , {1 , 2  , 3 , 4},{2 , 3 , 4 , 5} , {1 , 2 , 3 , 4 , 5}
+no . of subarrays = [n*(n+1)]/2
+

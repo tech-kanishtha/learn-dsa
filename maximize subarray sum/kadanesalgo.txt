@@ -1,0 +1,5 @@
+Intution :
++ve + +ve -> +ve
+-ve + ++ve -> +ve 
++ve + --ve -> -ve
+It says that whenever the sum becomes < 0 ; reset its value to 0 
