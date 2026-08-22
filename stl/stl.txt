@@ -49,3 +49,6 @@ just like lists , operations can be performed on both the sides
 **there are two deque in c++ which are - deque and dequeue : deque means doubly ended queue and dequeue means pop in queue**
 deque<int> d ;
 random access is possible which is d[2] is correct while in lists we cant do that
+
+PAIR : 
+Utility library 
