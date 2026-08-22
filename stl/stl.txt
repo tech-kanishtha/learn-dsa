@@ -1,0 +1,51 @@
+STL stands for standard template library
+-topics-
+containers
+iterators
+algorithms
+functors
+
+Vectors , Lists and Deque are in sequence 
+
+Vectors - vectors are implemented as dynamic arrays 
+syntax - vector<int> vec_name ;
+vector<int> vec = {1 , 3} ;
+vector<int> vec(3 , 0);
+vector<int> vec1(vec2) ;
+
+functions of vectors (O(1) complexity ): 
+push_back
+pop_back 
+emplace_back 
+at 
+front 
+back
+(we dont have front functions in vectors but we do have them in the lists )
+
+O(n)
+erase - needs an iterator to be passed inside it (can also erase multiple values by using the syntax vec.erase(start , end))
+in start , end - start is included and deleted but end is excluded and not deleted
+erase changes the size of the vecotr but not the capacity : capavity remains the same
+insert - helps in inserting a value at a particular place syntax is : vec.insert(position , value)
+clear - deletes all the elements in the vecotr so that the size becomes zero but the capacity remains the same
+empty - vec.empty - gives 1 if it is empty and 0 if its not
+
+Vectors ITERATORS 
+vec.begin() - points to the first element of the vector ; *vec.begin() gives the value at the first index
+vec.end() - if vec = {1 , 2 , 3 , 4 , 5} then vec.end will point to the element at the index after the 5 which will store the garbage value
+vec.rbegin() 
+vec.rend()
+rend and end dont give us the last index but the one after that 
+
+
+LISTS : implemented as doubly linked lists
+link<data_type> name ;
+(this is the one that stl provides us and the other list is created by us manually)
+same for pop pop_back , pop_front and push_back , push_front
+all the other size , erase , rbegin , rend , begin , end , front , back and insert work in lists too 
+
+DEQUE : doubly ended queue
+just like lists , operations can be performed on both the sides
+**there are two deque in c++ which are - deque and dequeue : deque means doubly ended queue and dequeue means pop in queue**
+deque<int> d ;
+random access is possible which is d[2] is correct while in lists we cant do that
