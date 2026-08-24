@@ -1,0 +1,26 @@
+functions inside the linked lists : 
+1. push_front
+2. push_back
+3. pop_front
+4. pop_back
+
+Making a ll from scratch : 
+(push front)
+1. If head is null : (empty ll)
+a. Create a new node 
+b. will point the head pointer to the newly added element (tail also as ll was empty and has only one node now)
+
+2. If head is not null : 
+a. Create a new node 
+b. point the nextptr of newnode to head
+c. head = newnode 
+
+(push back)
+1. If head is null : (empty ll)
+a. Create a new node 
+b. point the head and tail pointer to the newly added element 
+
+2. If head is not null : 
+a. Create a new node 
+b. tail->next = newnode 
+c. tail = newnode 
