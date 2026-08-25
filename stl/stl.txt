@@ -53,3 +53,32 @@ random access is possible which is d[2] is correct while in lists we cant do tha
 PAIR : 
 Utility library 
 in push back : the pair is made first and then pushed to the vector ; but when we use the emplace_back then it means , the pair will be made directly inside the vector
+
+Stack : (LIFO) - non sequential 
+Last In First Out
+addition and removal only from the top of the stack
+stack functions : 
+1. push , emplace
+2. top - finding the element at the top
+3. pop -deletes the element at the top 
+4. size - size of stack
+5. empty 
+6. swap
+
+Queue : (FIFO) - non sequential
+First In First Out (just like a queue in daily life)
+function : 
+1. push , emplace
+2. front
+3. pop
+4. size
+5. empty 
+6. swap
+
+Priority queue : uses maxheap or minheap (complete binary trees)
+maxheap, automatically stores the highest value at the top (as in a stack) [internally a tree ; this is just for visualization]
+for example : if we insert 5 : it will stay at the top 5
+if we insert 3 : 5 - 3 
+if we insert 10 : 10 - 5 - 3 
+if we insert 4 now : 10 - 5 - 4 - 3
+Here pop will delete the largest element first , then second largest , then third largest and so on . 
