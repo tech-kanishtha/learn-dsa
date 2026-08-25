@@ -52,3 +52,4 @@ random access is possible which is d[2] is correct while in lists we cant do tha
 
 PAIR : 
 Utility library 
+in push back : the pair is made first and then pushed to the vector ; but when we use the emplace_back then it means , the pair will be made directly inside the vector

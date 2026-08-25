@@ -21,5 +21,12 @@ int main(){
     for(pair<int , int> p : vec){
         cout<<p.first<<" "<<p.second<<endl;
     }
+
+    vec.emplace_back(4 , 5); // directly makes a pair : no curly braces 
+    vec.push_back({5 , 6}); // needs the argument to be the pair
+
+    for(pair<int , int> p : vec){
+        cout<<p.first<<" "<<p.second<<endl;
+    }
     return 0;
 }
