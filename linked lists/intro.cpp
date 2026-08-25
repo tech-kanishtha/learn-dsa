@@ -15,7 +15,7 @@ class list {
     node * tail ; 
 
     public : 
-    list(){
+    list(){ 
         head = NULL ; 
         tail = NULL ;
     }
@@ -50,6 +50,7 @@ class list {
             node * temp = head ; 
             head = head->next ; 
             temp->next = NULL ;
+            delete temp ;
         }
     }
     void popback(){
@@ -66,6 +67,25 @@ class list {
             tail =  temp ;
         }
     }
+
+    void insert(int value , int position){
+        if(position < 0)  {  
+            cout<<"Invalid"<<endl;  
+            return ;
+        }
+        if(position == 0)  {
+            push_front(value);  
+            return ;
+        }
+        node * temp = head ; 
+        for(int i = 0 ; i < position - 1 ; i++){
+            temp = temp->next ; 
+        }
+        node * newnode = new node(value) ; 
+        newnode->next = temp->next ;
+        temp->next = newnode ;
+    }
+
     void printLL(){
         node * temp = head ; 
         while(temp != NULL){
@@ -95,5 +115,10 @@ int main(){
     ll.popback();
 
     ll.printLL();
+
+    ll.insert(4 , 1);
+
+    ll.printLL();
+
     return 0;
 }

@@ -24,3 +24,17 @@ b. point the head and tail pointer to the newly added element
 a. Create a new node 
 b. tail->next = newnode 
 c. tail = newnode 
+
+insert in the middle of LL [insert(value , position)]
+1. Create a new node
+1->2->3->null
+0  1  2 
+if we want to insert 4 at 1 then 
+1->4->2->3->NULL
+therefore we want the connection btw the value and position - 1 and of value and position itself
+which means here : i want to link value with the 0th(just an index : although no index in ll) position and also with 1th position
+2. new node temp for traversal
+3. loop till position - 1 to get the node just before the position we want to insert the new element into using :
+temp = temp->next ;
+4. newnode->next = temp->next ;
+5. temp->next = newnode ;
